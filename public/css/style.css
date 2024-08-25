@@ -1,3 +1,19 @@
+/*
+login-page
+login-container
+login-header
+input-field
+form-input
+button-form
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;
+}
+
 .login-page {
     background-color:#004E64;
 }
@@ -5,13 +21,41 @@
 .login-container {
     position: fixed;
     inset: 0px;
-    width: 12rem;
-    height: 5rem;
+    width: fit-content;
+    height: fit-content;
     max-width: 100vw;
     max-height: 100dvh;
     margin: auto;
 }
 
 .login-header {
-    color: white;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+    margin: 5%;  
+}
+
+/*.input-field{
+    margin: 10px;
+}*/
+
+.form-input {
+   width: 100%;
+   height: 40px;
+   font-size: 17;
+   padding: 0 25px;
+   margin-bottom: 16px; 
+   border-radius: 30px;
+   border: none;
+}
+
+.button-form {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    background-color: #87919E;
+    border:none;
+    border-radius: 30px;
+    margin-top:10px;
+    color:#ffffff;
 }
