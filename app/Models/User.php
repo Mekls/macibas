@@ -48,4 +48,10 @@ class User extends Authenticatable
     public function role() {
         return $this->belongsTo(Role::class);
     }
+    public function forms() {
+        return $this->belongsToMany(Form::class, 'form_user');
+    }
+    public function lessons() {
+        return $this->hasMany(Lesson::class);
+    }
 }
