@@ -17,8 +17,11 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'email',
+        'first_name',
+        'last_name',
+        'personal_code',
+        'urder_role_id',
+        'form_id',
         'password',
     ];
 
@@ -49,7 +52,7 @@ class User extends Authenticatable
         return $this->belongsTo(Role::class);
     }
     public function forms() {
-        return $this->belongsToMany(Form::class, 'form_user');
+        return $this->belongsTo(Form::class);
     }
     public function lessons() {
         return $this->hasMany(Lesson::class);

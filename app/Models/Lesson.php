@@ -12,7 +12,7 @@ class Lesson extends Model
         return $this->belongsTo(Form::class);
     }
 
-    public function teacher() {
+    public function user() {
         return $this->belongsTo(User::class, 'user_id');
     }
 

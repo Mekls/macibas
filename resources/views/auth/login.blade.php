@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('/css/login.css') }}">
 
         <title>Macibas - Login</title>
     </head>
@@ -27,7 +27,7 @@
                 @if($errors->any())
                     <ul>
                         @foreach($errors->all() as $error)
-                            <li> {{$error}} </li>
+                            <li><p class="error-text">{{$error}}</p></li>
                         @endforeach
                     </ul>
                 @endif

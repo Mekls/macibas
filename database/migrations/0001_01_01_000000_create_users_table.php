@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('personal_code')->unique();
             $table->foreignId('user_role_id')->constrained()->onDelete('cascade');
+            $table->foreignId('form_id')->nullable()->constrained('forms')->onDelete('cascade');
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
