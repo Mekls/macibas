@@ -68,11 +68,96 @@
 
 /* table */
 table {
-    margin: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    background-color: rgb(236, 234, 234);
+    border-radius: 10px;
 }
 
-td, th, tr, table {
-    padding: 40px;
-    border: 1px, solid;
+th {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
 
+th, td {
+    padding: 12px 15px;
+}
+
+tr {
+    text-align: left;
+}
+
+/* end of table */
+
+
+
+/* Pagination */
+nav {
+    display: flex;
+    justify-content: center;
+}
+.pagination {
+    color: #009879;
+    margin-bottom: 60px;
+    font-size:xx-large;
+}
+.pagination a {
+    color: black;
+}
+.pagination li {
+    display: inline-block;
+    align-items: center;
+}
+
+.th-sort {
+    color: #ffffff;
+}
+
+/* Grid CSS */
+
+.grid-body {
+    display: grid;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    background-clip: content-box;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #009879;
+    margin: 10px;
+    border-radius: 10px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.grid-div p {
+    color: #ffffff;
+    
+}
+
+.grid-div a {
+    color: #a3aff7;
+}
+
+.grid-div a:hover {
+    color:#8892cc;
+}
+
+.no-data {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 30px;
 }

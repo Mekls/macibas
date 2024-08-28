@@ -51,7 +51,7 @@ class User extends Authenticatable
     public function role() {
         return $this->belongsTo(Role::class);
     }
-    public function forms() {
+    public function form() {
         return $this->belongsTo(Form::class);
     }
     public function lessons() {

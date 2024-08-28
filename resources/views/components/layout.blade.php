@@ -14,7 +14,7 @@
                 <ul class="nav-links">
                     <li><a href="/home" class=" {{request()->is('home') ? 'current-page' : ''}}">Home</a></li>
                     <li><a href="/lessons" class=" {{request()->is('lessons') ? 'current-page' : ''}}">Lessons</a></li>
-                    <li><a href="#">Link3</a></li>
+                    <li><a href="/forms" class=" {{request()->is('forms') ? 'current-page' : ''}}">Forms</a></li>
                     <li><a href="#">Link4</a></li>
                 </ul>
             </nav>
