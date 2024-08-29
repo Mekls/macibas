@@ -5,6 +5,8 @@
     padding: 0;
 }
 
+
+
 /* Navbar CSS */
 .nav-header li, a , button, p {
     font-family: "Monstserrat", sans-serif;
@@ -43,8 +45,6 @@
     color:#016d88;
 }
 
-
-
 .log-button {
     padding: 9px 25px;
     background-color: rgba(0,136,169,1);
@@ -57,14 +57,14 @@
 .log-button:hover {
     background-color: rgba(0,136,169,0.8);
 }
-/* End of navbar CSS */
-
 
 .slot-body {
     min-height: 100dvh;
     width: 100%;
     background-color: white;
 }
+
+
 
 /* table */
 table {
@@ -76,6 +76,13 @@ table {
     border-collapse: collapse;
     background-color: rgb(236, 234, 234);
     border-radius: 10px;
+}
+table a {
+    color: violet;
+}
+
+table a:hover{
+    color: darkviolet;
 }
 
 th {
@@ -91,8 +98,6 @@ th, td {
 tr {
     text-align: left;
 }
-
-/* end of table */
 
 
 
@@ -118,8 +123,9 @@ nav {
     color: #ffffff;
 }
 
-/* Grid CSS */
 
+
+/* Grid CSS */
 .grid-body {
     display: grid;
     padding-left: 40px;
@@ -136,7 +142,7 @@ nav {
     background-color: #009879;
     margin: 10px;
     border-radius: 10px;
-    height: 40px;
+    height: 60px;
     text-align: center;
     align-items: center;
 }
@@ -160,4 +166,132 @@ nav {
     font-weight: bold;
     font-size: x-large;
     padding: 30px;
+}
+
+
+/* Form CSS */
+.form-div {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-size: large;
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.submit-button {
+    width: 200px;
+    height: 20px;
+    background-color: green;
+    border-radius: 5px;
+    border-style: none;
+    margin-bottom: 5px;
+}
+
+.delete-button {
+    width: 200px;
+    height: 20px;
+    background-color: red;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.button-div {
+    display:flex;
+    flex-direction: column;
+}
+
+.button-div-2 {
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.crud-add {
+    background-color: #009879;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.crud-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-list {
+    color:red;
+    margin: 10px;
+}
+
+.crud-small-edit {
+    background-color: brown;
+    color:white;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.div-create-lesson {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+
+select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button-div-3 {
+    display:flex;
+    justify-content:space-around;
+}
+
+.edit-button-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+}
+.delete-button-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Timetable */
+h2 {
+    text-align: center;
+}
+
+.div-timetable {
+    padding-top: 20px;
+}
+
+.div-timetable p {
+    color:black;
+    text-align: center;
+    margin-bottom: 10px;
 }

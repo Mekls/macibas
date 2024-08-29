@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Lesson extends Model
 {
     use HasFactory;
+    protected $fillable = ['form_id', 'user_id', 'subject_id', 'weekday', 'period'];
     public function form() {
         return $this->belongsTo(Form::class);
     }

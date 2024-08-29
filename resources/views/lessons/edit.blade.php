@@ -1,8 +1,8 @@
 <x-layout>
-    <x-slot:title>Create Lesson</x-slot:title>
+    <x-slot:title>Edit Lesson</x-slot:title>
     <div class="div-create-lesson">
         <div>
-            <h1>Create Lesson</h1>
+            <h1>Edit Lesson</h1>
 
             @if ($errors->any())
                 <div>
@@ -14,8 +14,9 @@
                 </div>
             @endif
 
-            <form action="{{ route('lessons.store') }}" method="POST">
+            <form action="/lessons/{{$lesson->id}}" method="POST">
                 @csrf
+                @method('PATCH')
                 <div class="form-group">
                     <label for="form_id">Form:</label>
                     <select name="form_id" id="form_id" class="form-control" required>
@@ -61,7 +62,7 @@
                         <option value="6">6</option>
                     </select>
                 </div>
-                <button type="submit" class="submit-button">Create Lesson</button>
+                <button type="submit" class="submit-button">Submit</button>
             </form>
         </div>
     </div>

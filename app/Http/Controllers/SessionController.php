@@ -27,7 +27,7 @@ class SessionController extends Controller
         }
 
         request()->session()->regenerate();
-        return redirect('/home');
+        return redirect('lessons');
     }
 
     public function destroy() {

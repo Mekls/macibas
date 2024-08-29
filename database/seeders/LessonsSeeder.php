@@ -168,28 +168,28 @@ class LessonsSeeder extends Seeder
             'user_id' => 62,
             'subject_id' => 1,
             'weekday' => 5,
-            'period' => 5
+            'period' => 1
         ]);
         Lesson::create ([
             'form_id' => 1,
             'user_id' => 69,
             'subject_id' => 8,
             'weekday' => 5,
-            'period' => 5
+            'period' => 2
         ]);
         Lesson::create ([
             'form_id' => 1,
             'user_id' => 63,
             'subject_id' => 2,
             'weekday' => 5,
-            'period' => 5
+            'period' => 3
         ]);
         Lesson::create ([
             'form_id' => 1,
             'user_id' => 63,
             'subject_id' => 2,
             'weekday' => 5,
-            'period' => 5
+            'period' => 4
         ]);
     }
 }

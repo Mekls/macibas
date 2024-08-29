@@ -20,4 +20,13 @@
             </table>
         </div>
     @endif
+    @can('crud-actions')
+    <div class="button-div-2">
+            <button class="delete-button" type="submit" form="delete-form">Delete</button>
+    </div>
+    @endcan
+    <form method="POST" action="/forms/{{$form->id}}" id="delete-form">
+        @csrf
+        @method('DELETE')
+    </form>
 </x-layout>
